@@ -39,4 +39,4 @@ plot(theta.test, power_nobs[3,], type = "l", xlab = bquote(theta), ylab = "Poder
 abline(v = 0.0, lwd = 2, col = "grey80", lty = 2)
 
 plot(theta.test, power_nobs[4,], type = "l", xlab = bquote(theta), ylab = "Poder", main = "n = 80")
-abline(h = 0.0, lwd = 2, col = "grey80", lty = 2)
+abline(v = 0.0, lwd = 2, col = "grey80", lty = 2)
