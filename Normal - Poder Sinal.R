@@ -27,17 +27,17 @@ for (j in nobs){
   cont = cont+1
 }
 
-#Gr·fico para n diferentes.
+#Gr√°fico para n diferentes.
 x11()
 par(mfrow=c(2,2))
 plot(theta.test, power_nobs[1,], type = "l", xlab = bquote(theta), ylab = "Poder", main = "n = 5")
-abline(h = 0.05, lwd = 2, col = "grey80", lty = 2)
+abline(v = 0.0, lwd = 2, col = "grey80", lty = 2)
 
 plot(theta.test, power_nobs[2,], type = "l", xlab = bquote(theta), ylab = "Poder", main = "n = 10")
-abline(h = 0.05, lwd = 2, col = "grey80", lty = 2)
+abline(v = 0.0, lwd = 2, col = "grey80", lty = 2)
 
 plot(theta.test, power_nobs[3,], type = "l", xlab = bquote(theta), ylab = "Poder", main = "n = 30")
-abline(h = 0.05, lwd = 2, col = "grey80", lty = 2)
+abline(v = 0.0, lwd = 2, col = "grey80", lty = 2)
 
 plot(theta.test, power_nobs[4,], type = "l", xlab = bquote(theta), ylab = "Poder", main = "n = 80")
-abline(h = 0.05, lwd = 2, col = "grey80", lty = 2)
+abline(v = 0.0, lwd = 2, col = "grey80", lty = 2)
