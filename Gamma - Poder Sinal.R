@@ -10,7 +10,7 @@ library(tidyverse)
 
 
 r<-1000
-theta.test<-c(seq(-1,1,0.05))
+theta.test<-c(seq(0.001,0.05,0.001))
 M <- length(theta.test)
 power <- numeric(M)
 nobs<-c(5, 10, 30, 80)                 #Vetor Para tamanhos de amostras diferentes
@@ -30,7 +30,7 @@ for (j in nobs){
 }
 
 
-#Gráfico para n diferentes.
+#GrÃ¡fico para n diferentes.
 x11()
 par(mfrow=c(2,2))
 plot(theta.test, power_nobs[1,], type = "l", xlab = bquote(theta), ylab = "Poder", main = "n = 5")
