@@ -21,7 +21,7 @@ for (j in nobs){
     theta<-theta.test[i]
     p_value <- replicate(r, expr = {
       x <- rgamma(j, theta^2,theta)
-      SinalTest<-SIGN.test(x, mu=0)
+      SinalTest<-SIGN.test(x, md=0)
       SinalTest$p.value })
     power[i] <- mean(p_value <= 0.05)
   }
